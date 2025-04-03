@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valgomat for Ungdom</title>
+  <!-- Link til ekstern CSS-fil -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Inkluder Chart.js for diagram -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Quizseksjon -->
+  <div class="container" id="quiz-container">
+    <div id="quiz-content">
+      <div class="progress" id="progress">Spørsmål 1/80</div>
+      <div class="question">
+        <div class="question-icon" id="question-icon">💰</div>
+        <div class="question-text" id="question-text"></div>
+      </div>
+      <div class="slider-container">
+        <input type="range" id="answer-slider" min="1" max="5" value="3">
+        <div class="slider-labels">
+          <span>Helt uenig</span>
+          <span>Litt uenig</span>
+          <span>Nøytral</span>
+          <span>Litt einig</span>
+          <span>Helt enig</span>
+        </div>
+      </div>
+      <div class="navigation">
+        <button id="prev-btn">Forrige</button>
+        <button id="next-btn">Neste</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resultatskjerm -->
+  <div class="container" id="results-container" style="display:none;">
+    <div class="results">
+      <h2>Dine resultater</h2>
+      <div id="top-matches"></div>
+      <canvas id="resultsChart" class="bar-chart"></canvas>
+      <button id="restart-btn" style="margin-top:20px;">Start på nytt</button>
+    </div>
+  </div>
+
+  <!-- Link til ekstern JavaScript-fil -->
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

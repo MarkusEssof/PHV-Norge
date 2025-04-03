@@ -1,0 +1,98 @@
+/* Grunnleggjande styling med farge og skygge */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://sdmntprwestus.oaiusercontent.com/files/00000000-40d8-5230-8ed2-171ca934ba5d/raw?se=2025-04-03T17%3A03%3A36Z&sp=r&sv=2024-08-04&sr=b&scid=2450a677-9bd3-5870-b537-64a73b7e44ad&skoid=72d71449-cf2f-4f10-a498-f160460104ee&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-03T15%3A09%3A34Z&ske=2025-04-04T15%3A09%3A34Z&sks=b&skv=2024-08-04&sig=fZ5BKWeDeZP5%2BJhbTKIoQgoM92kWIpwmMqM45Q3jYnE%3D') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.98);
+  border: 2px solid #007BFF;
+  box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.progress {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.question-icon {
+  font-size: 2.5em;
+  margin-right: 15px;
+}
+
+.question-text {
+  font-size: 1.5em;
+  flex: 1;
+}
+
+.slider-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin-top: 5px;
+  color: #007BFF;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.results {
+  text-align: center;
+}
+
+.results h2 {
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+.bar-chart {
+  max-width: 600px;
+  margin: 0 auto;
+}
